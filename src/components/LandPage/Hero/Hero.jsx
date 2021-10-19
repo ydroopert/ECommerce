@@ -3,19 +3,17 @@ import Slide from '@mui/material/Slide';
 import useStyles from './styles'
 import CarouselSlide from './Slides/CarouselSlide'
 import Arrow from './Arrow'
-import MK1 from '../../assets/MK1.jpg'
-import MK2 from '../../assets/MK2.jpg'
-import MK3 from '../../assets/MK3.jpg'
-import MK4 from '../../assets/MK4.jpg'
+import MK1 from '../../../assets/MK1.jpg'
+import MK2 from '../../../assets/MK2.jpg'
+import MK3 from '../../../assets/MK3.jpg'
+import MK4 from '../../../assets/MK4.jpg'
 
 const SlideInfo = [
-{ pic: MK1 },
-{ pic: MK2 },
-{ pic: MK3 },
-{ pic: MK4 },
+    { pic: MK1 },
+    { pic: MK2 },
+    { pic: MK3 },
+    { pic: MK4 },
 ]
-
-
 
 function Hero() {
     const [index, setIndex] = useState(0);

@@ -13,7 +13,7 @@ export default function CarouselSlide(props) {
             display: 'flex',
             justifyContent: 'center',
             flex: '1.0',
-            height: '700px',
+            height: '70vh',
             alignItems: 'center',
             backgroundImage: `url(${pic})`,
             backgroundRepeat: 'no-repeat',

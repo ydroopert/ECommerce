@@ -8,8 +8,16 @@ export default makeStyles(theme => ({
         justifyContent: 'center',
         alignItems: 'center',
         flex: '1.0',
+        height: '80vh',
+        marginTop: '25px',
+        flexDirection: 'column'
     },
-    svg: {
-        cursor: 'pointer',
+    pic: {
+        maxHeight: '100%',
+        boxShadow: '5px 5px 5px gray',
+        borderRadius: 10
+    },
+    des: {
+        maxHeight: '20%'
     }
 }));
