@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { CssBaseline } from '@material-ui/core';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import { Navbar, Products, Cart, Checkout } from './components';
+import { Navbar, Products, Cart, Checkout, Hero } from './components';
 import { commerce } from './lib/commerce';
 
 const App = () => {
@@ -73,11 +73,14 @@ const App = () => {
 
   return (
     <Router>
-      <div style={{ display: 'flex' }}>
+      <div style={{ display: 'flex', padding: '70px'}}>
         <CssBaseline />
         <Navbar totalItems={cart.total_items} handleDrawerToggle={handleDrawerToggle} />
         <Switch>
           <Route exact path="/">
+            <Hero />
+          </Route>
+          <Route exact path="products">
             <Products products={products} onAddToCart={handleAddToCart} handleUpdateCartQty />
           </Route>
           <Route exact path="/cart">
