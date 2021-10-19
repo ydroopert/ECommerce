@@ -1,12 +1,11 @@
 import React from 'react';
 import { Card, makeStyles } from '@material-ui/core';
-
 export default function CarouselSlide(props) {
-    const { backgroundColor, title } = props.content;
-
+    const { pic } = props.content;
+    console.log(props)
+    console.log(pic)
     const useStyles = makeStyles(() => ({
         card: {
-            backgroundColor,
             borderRadius: 10,
             padding: '75px 50px',
             margin: '0px 25px',
@@ -16,6 +15,10 @@ export default function CarouselSlide(props) {
             flex: '1.0',
             height: '700px',
             alignItems: 'center',
+            backgroundImage: `url(${pic})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: '50% 50%',
+            backgroundSize: 'cover',
         } 
     }));
 
@@ -23,7 +26,6 @@ export default function CarouselSlide(props) {
 
     return (
         <Card className={classes.card}>
-            <h1>{title}</h1>
         </Card>
     );
 }

@@ -3,13 +3,17 @@ import Slide from '@mui/material/Slide';
 import useStyles from './styles'
 import CarouselSlide from './Slides/CarouselSlide'
 import Arrow from './Arrow'
+import MK1 from '../../assets/MK1.jpg'
+import MK2 from '../../assets/MK2.jpg'
+import MK3 from '../../assets/MK3.jpg'
+import MK4 from '../../assets/MK4.jpg'
 
-const SlideInfo = [{ backgroundColor: '#ff7c7c', title: 'Slide 1' },
-{ backgroundColor: '#ffb6b9', title: 'Slide 2' },
-{ backgroundColor: '#8deaff', title: 'Slide 3' },
-{ backgroundColor: '#ffe084', title: 'Slide 4' },
-{ backgroundColor: '#d9d9d9', title: 'Slide 5' },]
-
+const SlideInfo = [
+{ pic: MK1 },
+{ pic: MK2 },
+{ pic: MK3 },
+{ pic: MK4 },
+]
 
 
 
@@ -42,7 +46,7 @@ function Hero() {
                 direction='left'
                 clickFunction={() => onArrowClick('left')}
             />
-            <Slide in={slideIn} direction={slideDirection} style={{flex: '1.0'}}>
+            <Slide in={slideIn} direction={slideDirection} style={{ flex: '1.0' }}>
                 <div>
                     <CarouselSlide content={content} />
                 </div>
